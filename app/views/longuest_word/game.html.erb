@@ -1,0 +1,10 @@
+<h1>LonguestWord#game</h1>
+<p>Welcome to the longest word-game!</p>
+<p>Here is your grid:</p>
+<%= @grid %>
+<form action="/score">
+  <label>What's your best shot ?</label>
+  <input type="text" id="question" name="query" placeholder="your word">
+  <input type="hidden" name="start_time" value="<%= Time.now %>">
+  <input type="submit" value="go">
+</form>
